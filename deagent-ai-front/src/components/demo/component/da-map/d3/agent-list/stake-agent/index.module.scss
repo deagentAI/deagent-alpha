@@ -1,0 +1,17 @@
+.app {
+  @apply w-full rounded-[10px] overflow-hidden text-[#e0e0e0];
+  .app-title {
+    @apply flex w-full justify-center items-center py-[5px] text-[#fff] bg-[#211b1b];
+  }
+  .app-body {
+    @apply bg-[#211b1b];
+    :global {
+      .content {
+        @apply grid grid-cols-2 gap-x-[10px] gap-y-[10px] p-[10px];
+        .value {
+          @apply flex-1 flex justify-end;
+        }
+      }
+    }
+  }
+}

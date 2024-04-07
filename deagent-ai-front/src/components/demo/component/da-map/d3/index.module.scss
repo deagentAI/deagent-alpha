@@ -1,0 +1,11 @@
+.app {
+  @apply w-full h-full relative rounded-[20px] bg-cover bg-no-repeat;
+  background-image: url("/images/demo/bg-demo.png");
+  :global {
+    svg {
+      text {
+        @apply cursor-pointer;
+      }
+    }
+  }
+}

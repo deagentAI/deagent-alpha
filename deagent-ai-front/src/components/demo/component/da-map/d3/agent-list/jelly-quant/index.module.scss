@@ -1,0 +1,16 @@
+.app {
+    @apply w-full mt-[12px];
+    :global {
+       .card {
+        @apply w-[90%] flex items-center justify-center py-[20px] bg-[#1B1B1B] rounded-[12px] text-[16px] font-bold;
+        border: 1px solid #05F988;
+        margin: 0 auto;
+       }
+       .symbol-item {
+        @apply flex items-center text-[#000000] px-[16px] py-[8px] bg-[#05F988] rounded-[12px];
+       }
+       .arrow {
+        @apply flex justify-center my-[4px];
+       }
+    } 
+}

@@ -1,0 +1,13 @@
+.app {
+  @apply inline-block;
+  :global {
+    .percent-value {
+      &-up {
+        @apply text-[#00a052];
+      }
+      &-down {
+        @apply text-[#f1544e];
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.question-wrap {
+  @apply w-full min-w-[100%] flex justify-end;
+  .question {
+    :global {
+      div.question-value {
+        @apply w-full inline-block items-center justify-end p-[12px] phone:max-h-[90px] overflow-y-auto rounded-[18px] bg-[#01FD96] text-[#1C1D20] w-full;
+        word-break: break-word;
+      }
+    }
+  }
+  :global {
+    .left {
+      @apply text-left;
+    }
+    .right {
+      @apply text-right;
+      > div {
+        @apply justify-end;
+        svg {
+          @apply mt-[-6px];
+        }
+      }
+    }
+  }
+}

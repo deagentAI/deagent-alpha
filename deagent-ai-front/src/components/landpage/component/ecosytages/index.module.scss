@@ -1,0 +1,8 @@
+.app {
+  @apply flex flex-col text-center pc:pt-[160px] phone:pt-[80px];
+  :global {
+    .deAgent-ai-image {
+      @apply pc:w-[1079px] phone:w-[90%] flex justify-center mt-[46px] m-auto;
+    }
+  }
+}

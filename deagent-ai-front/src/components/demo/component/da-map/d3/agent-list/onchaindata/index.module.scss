@@ -1,0 +1,11 @@
+.app {
+  @apply w-full m-auto;
+  :global {
+    .title {
+      @apply text-[#a8ada8] text-[15px] pl-[20px] py-[12px];
+    }
+    .app-body {
+      @apply text-[#CBCACC] rounded-[10px];
+    }
+  }
+}

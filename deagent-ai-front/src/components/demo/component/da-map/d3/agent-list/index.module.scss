@@ -1,0 +1,149 @@
+.app {
+  @apply rounded-[20px] pc:w-[520px] absolute top-[0px] left-0 z-[10] overflow-x-hidden cursor-grab pc:h-full;
+  background-color: #272a2ea6;
+
+  :global {
+    .app-header {
+      @apply relative bg-[#262726] pc:h-[85px] phone:h-[48px] flex items-center pc:pl-[20px] phone:pl-[10px] cursor-default;
+      ul {
+        li {
+          @apply text-[#575857] text-[16px] font-bold cursor-pointer pc:px-[10px] phone:px-[5px];
+          &.active {
+            @apply text-[#00c177];
+          }
+          &.disabled {
+            @apply cursor-not-allowed;
+          }
+        }
+      }
+      .compiling {
+        @apply text-[#24A466] font-medium text-[10px] flex items-center ml-[18px];
+        .net-work-compiling {
+          @apply phone:text-[10px];
+        }
+      }
+      .option-button {
+        @apply absolute right-[20px] flex phone:top-[4px];
+        svg {
+          @apply w-[15px] h-[15px] opacity-0;
+        }
+
+        .zoom-in {
+          @apply flex justify-center items-center relative w-[15px] h-[15px] text-[#e2e2e2] text-[18px] bg-[#ef6057] rounded-[100%] cursor-pointer;
+          &:hover {
+            svg {
+              @apply opacity-[1];
+              fill: #fff;
+            }
+          }
+        }
+        .zoom-out {
+          @apply flex justify-center items-center  relative w-[15px] h-[15px] text-[#06bf45] mx-[5px] text-[18px] bg-[#f9b752] rounded-[100%] cursor-pointer;
+          &:hover {
+            svg {
+              @apply opacity-[1];
+              fill: #fff;
+            }
+          }
+        }
+        .close-icon {
+          @apply flex justify-center items-center  relative w-[15px] h-[15px] overflow-hidden text-[#e2e2e2] cursor-pointer bg-[#54bf55] rounded-[100%] text-[18px];
+          svg {
+            @apply w-[14px] h-[14px] opacity-0;
+          }
+          &:hover {
+            svg {
+              @apply opacity-[1];
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .history-body {
+      @apply p-[20px] text-[#fff] max-h-[500px] overflow-y-auto;
+      ul {
+        li {
+          @apply py-[10px] border-b border-[#575857];
+        }
+      }
+      .icon-wrap {
+        @apply relative;
+      }
+      .icon-wrap-inner {
+        @apply absolute w-[30px] h-[30px] flex items-center justify-center bg-[#00ab56] rounded-[100%];
+      }
+      .title {
+        @apply text-[20px] font-bold max-w-[320px];
+      }
+      .date {
+        @apply text-[#9a9a9a];
+      }
+    }
+  }
+}
+.app-hidden {
+  @apply opacity-[-10] hidden;
+}
+
+.app-body {
+  @apply max-h-[90%] overflow-y-auto overflow-x-hidden;
+  :global {
+    .list-app-item {
+      @apply border-b py-[10px] px-[20px] border-[#575857] text-[#fff] text-[15px] cursor-pointer;
+      &:last-child {
+        @apply border-b-0;
+      }
+      .icon {
+        @apply w-[30px] h-[30px] rounded-[100%] bg-[#00ab56] flex items-center justify-center;
+      }
+      .status-wrap {
+        @apply flex items-center px-[22px] py-[7px] rounded-[9px];
+        // .error-status-radius {
+        //   @apply inline-block w-[13px] h-[13px] rounded-full bg-[#f1544e];
+        // }
+        // .finished-status-radius {
+        //   @apply inline-block w-[13px] h-[13px] rounded-full bg-[#00ae6c];
+        // }
+
+        .value-status {
+          @apply flex rounded-[100%] whitespace-nowrap text-[16px] font-medium;
+          &-quote {
+            @apply text-[#009de2];
+          }
+          &-finished {
+            @apply text-[#00a052] flex items-center;
+            &:before {
+              content: "";
+              @apply inline-block w-[10px] h-[10px] rounded-full bg-[#00a052] mr-[2px];
+            }
+          }
+          &-success {
+            @apply text-[#00ae6c];
+          }
+          &-error {
+            @apply text-[#f1544e];
+          }
+        }
+        .value {
+          @apply ml-[5px];
+        }
+      }
+
+      .top {
+        @apply w-full justify-between mb-[10px];
+      }
+      .inner-content {
+        @apply hidden w-full opacity-0;
+        &-active {
+          @apply flex w-full opacity-[1];
+          transition: all 0.3s ease-in-out;
+          &-hidden {
+            @apply hidden w-full opacity-0;
+          }
+        }
+      }
+    }
+  }
+}

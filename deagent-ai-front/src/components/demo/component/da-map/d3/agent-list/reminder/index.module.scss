@@ -1,0 +1,43 @@
+.app {
+  @apply w-full rounded-[10px] flex flex-col text-[#fff] p-[12px] bg-[#3F3B3B];
+  :global {
+    .step {
+      @apply bg-[#241D1D] mb-[8px] rounded-[8px] p-[12px];
+    }
+    .step1-loading {
+    }
+    .step1-success {
+      @apply flex px-[8px] py-[16px] bg-[#241D1D] mb-[8px] rounded-[8px] items-center;
+      transition: transform 0.5s ease-in-out;
+    }
+    .step1-input {
+      @apply w-[240px] mr-[16px] p-[12px] h-[28px] text-[#fff] rounded-[4px] text-[14px];
+      border: 1px solid #999;
+      &:after {
+        border-bottom: none;
+      }
+    }
+    .confirm {
+      @apply bg-[#30AE74] px-[16px] py-[6px] rounded-[8px] text-[12px] font-bold;
+    }
+    .step2-success {
+      @apply flex items-center;
+      transition: transform 0.5s ease-in-out;
+    }
+    .title {
+      @apply text-[16px] font-bold text-[#FAFAFA];
+    }
+    .email-text {
+      @apply text-[12px] font-bold text-[#FAFAFAB2];
+    }
+    .submit-button {
+      @apply w-full flex items-center justify-center text-[16px] font-bold py-[6px] bg-[#05F988B2] rounded-[8px];
+      transition: transform 0.5s ease-in-out;
+    }
+    .notice {
+      @apply w-full flex items-center justify-center text-[16px] font-bold px-[8px] py-[6px] text-[#FAFAFAB2] bg-[#663215B2] rounded-[8px];
+      @apply text-[10px] font-bold;
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.title-1 {
+  @apply absolute text-[12px] text-[#fff];
+  top: 74px;
+  transform: rotate3d(0, 0, 0, 0);
+  right: 40px;
+}
+.title-2 {
+  @apply absolute text-[#fff] text-[11px] inline-block w-[96px];
+  right: 18px;
+  bottom: 61px;
+  transform: rotate3d(1, 1, 1, 5deg);
+}
+.title-3 {
+  @apply absolute text-[10px] text-[#fff] inline-block w-[65px];
+  left: 6px;
+  bottom: 144px;
+}

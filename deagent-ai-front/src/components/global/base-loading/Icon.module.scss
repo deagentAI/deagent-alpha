@@ -1,0 +1,17 @@
+.app {
+  margin: auto;
+  display: block;
+  shape-rendering: auto;
+  animation-play-state: running;
+  animation-delay: 0s;
+  :global {
+    .circle1 {
+      animation-play-state: running;
+      animation-delay: 0s;
+      .animate {
+        animation-play-state: running;
+        animation-delay: 0s;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.app {
+  .app-content {
+    @apply mt-[22px];
+    > div {
+      @apply px-[15px] py-[12px] bg-[#333436] rounded-[14px] mb-[12px] max-w-[480px] text-[14px] font-normal;
+    }
+  }
+}

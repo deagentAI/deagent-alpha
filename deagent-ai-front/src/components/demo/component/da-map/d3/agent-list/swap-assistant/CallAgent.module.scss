@@ -1,0 +1,15 @@
+.app {
+  @apply w-full phone:max-h-[316px] phone:overflow-y-auto;
+  :global {
+    .answer-content-quote-wrap {
+      @apply grid grid-cols-1 gap-[10px] mb-[10px];
+      .answer-quote-item {
+        @apply bg-[#000] rounded-[5px] p-[10px] cursor-pointer hover:bg-[#00f990];
+        transition: all 0.3s;
+        &-disabled {
+          @apply cursor-not-allowed bg-[#99a3aa] hover:bg-[#99a3aa];
+        }
+      }
+    }
+  }
+}

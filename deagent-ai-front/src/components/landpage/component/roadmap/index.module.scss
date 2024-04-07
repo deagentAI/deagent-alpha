@@ -1,0 +1,104 @@
+.app {
+  @apply pc:w-[1262px] flex flex-col text-center m-auto pc:pt-[166px] phone:pt-[80px] relative;
+  :global {
+    .timeline {
+      @apply relative w-[100%] my-[130px] m-auto bg-contain bg-no-repeat bg-center h-[123px];
+      background-image: url("/images/landing-page/roadmap.png");
+    }
+    .roadmap-phone {
+      @apply relative w-[94%] my-[12px] m-auto bg-no-repeat bg-center h-[757px];
+      background-size: 100% 100%;
+      background-image: url("/images/landing-page/roadmap_bg.png");
+    }
+    .timeline-phone {
+      @apply absolute w-[2px] left-[7%] bg-contain bg-no-repeat bg-center h-[757px];
+      background-image: url("/images/landing-page/roadmap_phone.png");
+    }
+    .ai-text {
+      color: var(--deagent-ai-active-bg-color);
+    }
+    .timeline-point {
+      @apply absolute flex flex-col items-center;
+      .wrap {
+        @apply flex flex-col items-center;
+      }
+      &-1 {
+        @apply pc:left-[38px] pc:top-[40px];
+        .wrap {
+          @apply relative top-[-10px];
+        }
+      }
+      &-2 {
+        @apply pc:left-[220px] pc:top-[-93px];
+        flex-flow: column-reverse;
+        .wrap {
+          @apply mt-[10px];
+        }
+      }
+      &-3 {
+        @apply left-[400px] top-[40px];
+        .wrap {
+          @apply relative top-[-10px];
+        }
+      }
+      &-4 {
+        @apply left-[46%] top-[-108px];
+        flex-flow: column-reverse;
+        .wrap {
+          @apply relative top-[10px];
+        }
+      }
+      &-5 {
+        @apply right-[220px] top-[40px];
+        .wrap {
+          @apply relative top-[-10px];
+        }
+      }
+      &-6 {
+        @apply right-[38px] top-[-60px];
+        flex-flow: column-reverse;
+        .wrap {
+          @apply relative top-[10px];
+        }
+      }
+    }
+    .timeline-point-phone {
+      @apply absolute flex items-center;
+      .wrap {
+        @apply relative flex flex-col items-start top-[-4px];
+        flex-grow: 1;
+      }
+      &-1 {
+        @apply phone:left-[5%] phone:top-0;
+      }
+      &-2 {
+        @apply phone:left-[5%] phone:top-[120px];
+        flex-flow: column-reverse;
+      }
+      &-3 {
+        @apply left-[5%] top-[240px];
+      }
+      &-4 {
+        @apply left-[5%] top-[360px];
+        flex-flow: column-reverse;
+      }
+      &-5 {
+        @apply left-[5%] top-[480px];
+      }
+      &-6 {
+        @apply left-[5%] top-[600px];
+        flex-flow: column-reverse;
+      }
+    }
+    .road-item {
+      @apply flex items-start;
+    }
+    .road-icon {
+      @apply w-[20px];
+    }
+    .description {
+      @apply text-[12px] font-unageo font-normal leading-[16px] pc:w-[287px] phone:text-left phone:pr-[8px] phone:mt-[12px];
+      color: var(--deagent-ai-title-bg-color);
+    }
+  }
+}

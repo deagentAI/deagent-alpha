@@ -1,0 +1,82 @@
+.app {
+  @apply w-[100%] flex m-auto pt-[142px] pb-[39px] z-[12] relative phone:h-[730px] phone:pt-[49px];
+  :global {
+    .wrapper {
+      @apply w-full flex justify-between phone:justify-center;
+      .subscribe-title {
+        @apply text-left phone:text-center;
+        // text-align: left !important;
+      }
+    }
+    .da-logo {
+      @apply pc:mb-[121px] pc:mt-[68px];
+    }
+    .agent-ai-banner-title {
+      @apply pc:w-[684px] pc:leading-[46px] font-unageo font-semibold phone:text-center;
+      color: var(--deagent-ai-title-bg-color);
+      > div {
+        @apply text-[36px] whitespace-nowrap;
+      }
+      &-2 {
+        color: var(--deagent-ai-active-bg-color);
+      }
+      input {
+        background-color: #272a2e;
+        color: var(--deagent-ai-title-bg-color);
+      }
+    }
+    .agent-ai-banner-sub-title {
+      @apply font-light flex flex-col pt-[148px] pb-[246px];
+      font-size: 16px !important;
+      line-height: 18px !important;
+    }
+    .agent-ai-banner-image {
+      @apply pc:absolute pc:w-[901px] pc:h-[851px] pc:right-[-208px] phone:w-[100%] phone:absolute phone:top-[300px];
+    }
+    .subscribe-form {
+      @apply flex mt-[60px] relative;
+      button {
+        @apply text-[14px] font-semibold bg-[#56595F];
+        border: 1px solid #56595f;
+        color: var(--deagent-ai-title-bg-color);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      .close-btn {
+        @apply absolute pc:left-[365px] phone:left-[140px] top-[13px] cursor-pointer;
+      }
+    }
+    .subscribe-button {
+      @apply flex items-center;
+    }
+    .deagent-input {
+      @apply pc:w-[400px] phone:w-[70%];
+      input {
+        @apply h-[43px] text-[14px] pl-[12px];
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+      &:hover {
+        &:before {
+          border-bottom: none !important;
+          content: "";
+        }
+      }
+      &:before {
+        border-bottom: none;
+        content: "";
+      }
+      &:after {
+        border-bottom: none;
+        content: "";
+      }
+    }
+    .email-error {
+      font-size: 16px !important;
+      color: #f03939;
+    }
+  }
+}

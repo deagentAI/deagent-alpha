@@ -1,0 +1,8 @@
+.app {
+  @apply flex-1 rounded-[20px] bg-[#1a1b1f] border-[#37383a] border opacity-0;
+  :global {
+  }
+}
+.app-hidden {
+  @apply hidden;
+}

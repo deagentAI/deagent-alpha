@@ -1,0 +1,21 @@
+.app {
+  @apply py-[10px] px-[20px] rounded-[10px];
+  .app-header {
+    @apply bg-[#333436] rounded-[14px] px-[24px] py-[12px] flex justify-between items-center mb-[13px];
+    .increase-ratio-down {
+      @apply text-[#ff3323];
+    }
+    .increase-ratio-up {
+      @apply text-[#00ab56];
+    }
+    .spacing {
+      @apply ml-[8px];
+    }
+  }
+  .app-body {
+    @apply text-[#fff];
+  }
+  .content {
+    @apply text-[14px] font-normal leading-[18px];
+  }
+}

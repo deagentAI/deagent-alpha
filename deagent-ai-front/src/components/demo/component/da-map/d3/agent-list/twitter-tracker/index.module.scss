@@ -1,0 +1,23 @@
+.app {
+  @apply w-full rounded-[10px] flex flex-col text-[#fff] p-[12px] bg-[#241D1D];
+  :global {
+    .header {
+      @apply flex justify-between;
+    }
+    .header-name {
+      @apply text-[16px] font-bold mx-[6px];
+    }
+    .header-symbol {
+      @apply text-[12px] font-bold text-[#666];
+    }
+    .visit-url {
+      @apply text-[12px] font-bold text-[#666] underline;
+    }
+    .content {
+      @apply text-[12px] font-bold my-[8px];
+    }
+    .follow {
+      @apply grid grid-cols-2 gap-[8px] text-[12px] font-bold pr-[12px];
+    }
+  }
+}

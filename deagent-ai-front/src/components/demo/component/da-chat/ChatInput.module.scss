@@ -1,0 +1,36 @@
+.app {
+  @apply flex items-center w-[87%] ml-[9%] h-[88px] rounded-[20px] border-[#37383a] border overflow-y-auto;
+  :global {
+    .MuiTooltip-tooltip {
+      @apply bg-[#191a1c] text-[#fff] border-[#37383a] border;
+    }
+    .clear-icon {
+      @apply absolute left-[2%] cursor-pointer;
+      &-disabled {
+        @apply cursor-not-allowed;
+      }
+    }
+    .input-search {
+      @apply w-full outline-none text-[#a4acb4];
+      text-indent: 15px;
+    }
+    textarea {
+      @apply flex-1 bg-transparent outline-none text-[#a4acb4];
+      text-indent: 10px;
+    }
+
+    .send-icon {
+      @apply rotate-[270deg] mx-[10px] cursor-pointer;
+      &-disabled {
+        @apply cursor-not-allowed;
+        opacity: 0.3;
+      }
+      &-hidden {
+        @apply hidden;
+      }
+    }
+    .stop-icon {
+      @apply cursor-not-allowed mx-[10px] text-[#a4acb4];
+    }
+  }
+}

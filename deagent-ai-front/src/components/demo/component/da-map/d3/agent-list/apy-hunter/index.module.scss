@@ -1,0 +1,66 @@
+.app {
+  @apply w-full rounded-[10px] flex flex-col overflow-hidden text-[#666];
+  :global {
+    .header {
+      @apply flex;
+      font-weight: bold;
+      background-color: #000;
+    }
+    .empty {
+      @apply bg-[#000000] border-t border-t-[#5b5b5b];
+    }
+    .row {
+      @apply flex bg-[#000] text-left;
+      &:first-child {
+        border-top: 1px solid #272a2e;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid #272a2e;
+      }
+      &:last-child {
+        border-bottom: 1px solid
+          linear-gradient(
+            90deg,
+            rgba(30, 32, 37, 0) 0%,
+            #919597 50%,
+            rgba(30, 32, 37, 0) 99%
+          );
+      }
+    }
+    .cell {
+      flex: 1;
+      padding: 10px;
+    }
+    .cell1 {
+      @apply w-[70px];
+      word-break: break-word;
+    }
+    .choose-button {
+      @apply w-full bg-[#04C86D] text-center py-[8px] cursor-pointer rounded-[8px] text-[#fff] my-[12px] text-[16px] font-bold;
+    }
+    .app-content {
+      @apply bg-[#3F3B3B] mb-[20px] p-[12px] rounded-[8px];
+    }
+    .app-head {
+      @apply flex;
+    }
+    .icon-left {
+      @apply relative;
+      img {
+        @apply rounded-[50%];
+      }
+    }
+    .icon-right {
+      @apply absolute left-[8px] top-[0];
+    }
+    .app-title {
+      @apply flex w-full justify-center items-center py-[5px] text-[#fff] bg-[#211b1b] rounded-[8px];
+    }
+    .app-body {
+      @apply px-[2px] text-[12px] font-bold;
+    }
+    .content-item {
+      @apply flex justify-between mb-[4px];
+    }
+  }
+}

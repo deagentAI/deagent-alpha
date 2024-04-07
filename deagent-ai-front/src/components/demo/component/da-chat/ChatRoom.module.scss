@@ -1,0 +1,62 @@
+.app {
+  :global {
+    .chat-wrap-item {
+      @apply gap-[10px] text-[#fff];
+      .reminder-comp {
+        .question-value {
+          background-color: #24262a !important;
+          color: #fff;
+        }
+      }
+      .answer {
+        &-author {
+          @apply pb-[10px] flex items-center;
+          > div {
+            @apply w-[20px] h-[20px] rounded-full mr-[5px];
+            > img {
+              @apply rounded-full;
+            }
+          }
+        }
+        &-content {
+          @apply flex w-full bg-[#292b30] rounded-[18px] p-[12px] mb-[10px] min-h-[48px] items-center;
+          .base-type-text {
+            @apply max-w-[416px];
+            word-wrap: break-word !important;
+            word-break: break-word !important;
+            p {
+              word-wrap: break-word !important;
+              word-break: break-word !important;
+            }
+            code {
+              white-space: pre-wrap;
+              word-wrap: break-word;
+              overflow-wrap: break-word;
+            }
+            ul {
+              li {
+                @apply flex;
+                .positive {
+                  @apply text-[#00ae6c];
+                }
+              }
+            }
+            .negative {
+              code {
+                @apply text-[#e52823];
+              }
+            }
+            .positive {
+              code {
+                @apply text-[#00ae6c];
+              }
+            }
+          }
+          &-hidden {
+            @apply hidden;
+          }
+        }
+      }
+    }
+  }
+}

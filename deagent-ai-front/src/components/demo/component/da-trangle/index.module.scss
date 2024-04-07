@@ -1,0 +1,14 @@
+.app {
+  @apply absolute left-0 top-[50%] translate-y-[-50%] bg-[#00f990] rounded-tr-[10px] pc:hidden;
+  :global {
+    .defaultIcon {
+      @apply text-[#fff] text-[30px];
+      transition: transform 0.5s ease-in-out;
+    }
+    .defaultIconActive {
+      @apply text-[#fff];
+      transform: rotateY(180deg);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.app {
+  @apply w-full h-[80px] bg-[#0d0f14] flex sticky left-0 top-0 z-[100];
+  :global {
+    .header-main {
+      @apply pc:min-w-[1248px] phone:w-[85%] m-auto flex justify-between items-center;
+    }
+    .header-right {
+      @apply flex items-center;
+    }
+    .mobile-nav {
+      @apply pc:hidden flex flex-col px-[10px] bg-[#0f1114];
+      > div {
+        @apply cursor-pointer text-[14px] text-[#919597] py-[10px];
+        &.active {
+          color: var(--deagent-ai-active-bg-color);
+        }
+      }
+    }
+    .pc-nav {
+      @apply phone:hidden;
+      > div {
+        @apply ml-[22px] cursor-pointer text-[14px] text-[#919597];
+        &.active {
+          color: var(--deagent-ai-active-bg-color);
+        }
+      }
+    }
+  }
+}

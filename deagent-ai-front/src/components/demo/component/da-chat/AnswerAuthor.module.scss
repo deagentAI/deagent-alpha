@@ -1,0 +1,9 @@
+.app {
+  @apply pt-[29px] pb-[10px] flex items-center text-[#fff];
+  > div {
+    @apply w-[20px] h-[20px] rounded-full mr-[5px];
+    > img {
+      @apply rounded-full;
+    }
+  }
+}

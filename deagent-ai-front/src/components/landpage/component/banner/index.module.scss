@@ -1,0 +1,37 @@
+.app {
+  @apply w-full relative;
+  :global {
+    .wrapper {
+      @apply flex justify-between phone:justify-center pc:pt-[84px] phone:pt-[32px] pc:w-[1248px] phone:w-[100%] m-auto phone:h-[482px];
+    }
+    .agent-ai-banner-title {
+      @apply pc:w-[100%] pc:text-[50px] font-semibold pc:leading-[65px] font-unageo phone:text-center;
+      color: var(--deagent-ai-title-bg-color);
+      div {
+        @apply text-[50px] phone:text-[24px] phone:leading-[32px] whitespace-nowrap;
+      }
+      button {
+        @apply pc:h-[56px] pc:text-[28px] font-bold rounded-[8px] mt-[21px];
+        border: 1px solid var(--deagent-ai-active-bg-color);
+        color: var(--deagent-ai-active-bg-color);
+      }
+      &-2 {
+        color: var(--deagent-ai-active-bg-color);
+      }
+      > h1 {
+        @apply phone:text-[20px];
+      }
+    }
+    .agent-ai-banner-sub-title {
+      @apply font-light flex flex-col pc:pt-[310px] phone:hidden;
+      font-size: 16px !important;
+      line-height: 18px !important;
+    }
+    .agent-ai-banner-image {
+      @apply pc:w-[800px] pc:h-[auto] phone:w-[100%] absolute pc:right-[-123px] pc:top-[50px] phone:top-0 phone:top-[126px];
+      > img {
+        @apply w-[100%] h-auto;
+      }
+    }
+  }
+}

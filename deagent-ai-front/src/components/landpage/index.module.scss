@@ -1,0 +1,21 @@
+.app {
+  @apply pc:w-[1248px] phone:w-full relative;
+  margin: 0 auto !important;
+  background-image: url("/images/landing-page/home_bg.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/landing-page/animation.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+}

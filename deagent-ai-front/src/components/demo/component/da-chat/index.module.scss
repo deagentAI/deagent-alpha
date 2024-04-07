@@ -1,0 +1,29 @@
+.app {
+  @apply phone:w-full pc:w-[480px] bg-[#272a2ea6] pb-[12px] rounded-[20px];
+  @apply pc:h-pcChatHeight pc:absolute pc:right-[10px] phone:relative;
+  @apply translate-x-["-100%"];
+  :global {
+    .customer-content-button {
+      @apply whitespace-nowrap phone:p-0;
+      .wallet-adapter-button-trigger {
+        @apply bg-[#01BC8D] rounded-[10px] h-[36px] phone:mr-[10px];
+        padding: 0 8px;
+      }
+    }
+    .app-chat-header {
+      @apply flex justify-between items-center rounded-t-[20px] rounded-r-[20px] bg-[#39393bcc] pt-[17px] pb-[20px] pc:pl-[26px] pc:pr-[25px];
+    }
+    .app-chat-body {
+      @apply pb-[18px] overflow-y-auto px-[24px] pc:h-pcChatBodyHeight phone:h-mobileChatBodyHeight;
+    }
+    .da-title {
+      @apply text-[#C5C5C5] text-[16px] font-medium mx-[8px] phone:text-[10px];
+    }
+    .compiling {
+      @apply text-[10px] font-medium text-[#828283];
+    }
+  }
+}
+.app-hidden {
+  @apply hidden;
+}

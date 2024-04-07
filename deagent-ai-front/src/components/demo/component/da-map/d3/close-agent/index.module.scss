@@ -1,0 +1,6 @@
+.close-agent-app {
+  @apply w-[30px] h-[30px] cursor-pointer bg-[#00e990] flex items-center justify-center rounded-b-lg absolute top-[0] left-0 z-[10];
+}
+.app-visible {
+  @apply opacity-0 z-[-10];
+}

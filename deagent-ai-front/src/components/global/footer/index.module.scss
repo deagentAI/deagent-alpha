@@ -1,0 +1,35 @@
+.footer {
+  @apply w-full pc:h-[178px] phone:h-[120px] bg-[#1C1D20] flex items-center;
+  :global {
+    .footer-main {
+      @apply w-[76%] m-auto flex phone:flex-col pc:justify-between phone:items-center;
+    }
+    .icon {
+      @apply flex items-center phone:flex-1 phone:ml-[-20px] phone:pt-[10px];
+      span {
+        @apply ml-[22px] cursor-pointer;
+
+        &[aria-label="facebook"],
+        &[aria-label="youtube"],
+        &[aria-label="ins"],
+        &[aria-label="email"],
+        &[aria-label="tg"],
+        &[aria-label="discord"],
+        &[aria-label="twitter"] {
+          &:hover {
+            transition: all 0.2s ease;
+          }
+        }
+      }
+      a {
+        @apply inline px-[15x];
+        svg {
+          @apply ml-[13px];
+        }
+        img {
+          @apply ml-[13px];
+        }
+      }
+    }
+  }
+}

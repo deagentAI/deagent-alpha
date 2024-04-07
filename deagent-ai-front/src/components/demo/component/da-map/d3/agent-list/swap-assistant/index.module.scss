@@ -1,0 +1,41 @@
+.app {
+  @apply w-full rounded-[10px] overflow-hidden text-[#e0e0e0];
+  :global {
+    .choose-button {
+      @apply w-full bg-[#04C86D] text-center py-[8px] cursor-pointer rounded-[8px] text-[#fff] my-[12px] text-[16px] font-bold;
+    }
+    .app-content {
+      @apply bg-[#333436] mb-[20px] p-[12px] rounded-[8px] text-[#828283];
+    }
+    .app-head {
+      @apply flex;
+    }
+    .icon-left {
+      @apply relative;
+      img {
+        @apply rounded-[50%];
+      }
+    }
+    .icon-right {
+      @apply absolute left-[8px] top-[0];
+    }
+    .app-title {
+      @apply flex w-full justify-center items-center py-[5px] text-[#fff] bg-[#1C1E23] rounded-[8px];
+    }
+    .app-body {
+      @apply px-[2px] text-[12px] font-bold;
+    }
+    .data-list {
+      @apply grid grid-cols-2 gap-[8px];
+    }
+    .data-item {
+      @apply flex flex-col gap-[8px];
+    }
+    .content-item {
+      @apply flex justify-between mb-[4px];
+      .label {
+        @apply font-bold;
+      }
+    }
+  }
+}

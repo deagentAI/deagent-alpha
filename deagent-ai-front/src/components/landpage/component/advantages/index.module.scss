@@ -1,0 +1,60 @@
+.app {
+  @apply w-full flex flex-col overflow-x-hidden m-auto pc:overflow-hidden pc:pt-[160px] phone:pt-[80px];
+  :global {
+    .advantages-content {
+      @apply relative w-[1115px] m-auto  flex pc:pt-[50px];
+    }
+    .advantages-center {
+      @apply pc:grid pc:grid-cols-custom-col-329 pc:gap-x-[70px] 
+      phone:grid phone:gap-[23px] phone:grid-cols-1 phone:mt-[19px] phone:mx-[10px];
+    }
+    .advantages-point {
+      @apply absolute left-[-285px] top-[90px] w-[30%] h-[318px] rotate-[-15deg] z-10 mt-[135px];
+      &.left {
+        &::before {
+          content: "";
+          @apply inline-block w-full h-[318px];
+          background-image: url("/images/landing-page/advantages_left.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .advantages-point-right {
+      @apply absolute right-[-330px] top-[90px] w-[30%] h-[318px] z-[10] rotate-[15deg] mt-[135px];
+
+      &.right {
+        &::before {
+          content: "";
+          @apply inline-block w-full h-[318px];
+          background-image: url("/images/landing-page/advantages_right.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .advantages-card {
+      @apply w-[329px] h-[402px] bg-center bg-no-repeat;
+      background-size: 329px 402px;
+    }
+    .advantages-card-phone {
+      @apply w-full flex items-center rounded-[12px] bg-center bg-no-repeat py-[18px] border-[1px];
+      border-color: #808181;
+      background-size: 100% 100%;
+    }
+    .phone-img {
+      @apply w-[85px] h-[85px] bg-contain bg-center bg-no-repeat ml-[24px];
+    }
+    .ai-right {
+      @apply flex flex-col w-[70%];
+    }
+    .ai-title {
+      @apply px-[31px] phone:px-[18px] text-center pc:pt-[230px] text-[16px] phone:text-[12px] phone:text-left font-semibold leading-[21px] font-unageo;
+      color: var(--deagent-ai-active-bg-color);
+    }
+    .ai-content {
+      @apply px-[25px] phone:px-[18px] text-center pt-[19px] phone:pt-[7px] phone:text-left pc:pb-[10px] text-[12px] font-normal font-unageo leading-[20px];
+      color: var(--deagent-ai-title-bg-color);
+    }
+  }
+}

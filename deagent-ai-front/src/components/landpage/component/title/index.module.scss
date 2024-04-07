@@ -1,0 +1,16 @@
+.app {
+  @apply text-center;
+  :global {
+    .title {
+      @apply pc:text-[36px] phone:text-[20px] font-semibold font-unageo;
+      color: var(--deagent-ai-title-bg-color);
+    }
+    .sub-title {
+      @apply pc:text-[20px] phone:text-[16px] font-normal mt-[6px] mb-[46px];
+      color: var(--deagent-ai-title-bg-color);
+    }
+    .hight-light {
+      color: var(--deagent-ai-active-bg-color);
+    }
+  }
+}

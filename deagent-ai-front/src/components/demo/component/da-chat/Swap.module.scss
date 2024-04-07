@@ -1,0 +1,67 @@
+.app {
+  @apply text-[#ffffff] mt-[12px];
+  :global {
+    .swap-card {
+      @apply bg-[#030303] rounded-[12px] p-[20px] mb-[10px];
+    }
+    .head {
+      @apply flex items-center justify-between  bg-[#241D1D] px-[8px] py-[16px] rounded-[12px] text-[16px] font-bold mb-[18px];
+    }
+    .input-middle {
+      @apply flex items-center justify-between text-[16px] font-semibold mb-[14px];
+    }
+    .middle-right {
+      @apply flex items-center justify-between bg-[#000] p-[4px] rounded-[4px];
+    }
+    .token {
+      @apply flex items-center mr-[12px];
+      img {
+        @apply rounded-[50%];
+      }
+    }
+    .slippage-input {
+      @apply w-[60px] text-[#fff];
+      input {
+        @apply p-0 text-center;
+      }
+      p {
+        @apply text-[#fff];
+      }
+    }
+    .change-token {
+      @apply flex items-center justify-between;
+    }
+    .max-button {
+      @apply text-[#28C17A] text-[20px] font-semibold cursor-pointer;
+    }
+    .slider-card {
+      @apply text-[#1FD085];
+      span[data-index="0"][aria-hidden="true"] {
+        @apply text-[#fff];
+      }
+      span[data-index="1"][aria-hidden="true"] {
+        @apply text-[#fff];
+        left: 90% !important;
+      }
+    }
+    .swap-button {
+      @apply text-center bg-[#28C17A] w-full py-[12px] rounded-[12px] text-[20px] font-semibold cursor-pointer;
+    }
+    .stopSwap-button {
+      @apply mt-[12px] text-center bg-[#85b59f] w-full py-[12px] rounded-[12px] text-[20px] font-semibold cursor-pointer;
+    }
+    .center {
+      @apply justify-center;
+    }
+    .spacing {
+      @apply mx-[4px];
+    }
+    .processing-button {
+      @apply flex items-center justify-center bg-[#1C392C] w-full py-[12px] rounded-[12px] text-[16px] font-semibold;
+      box-shadow: 0px 0px 12px 0px #17604699;
+    }
+    .forbid-button {
+      @apply bg-[#999] cursor-not-allowed;
+    }
+  }
+}

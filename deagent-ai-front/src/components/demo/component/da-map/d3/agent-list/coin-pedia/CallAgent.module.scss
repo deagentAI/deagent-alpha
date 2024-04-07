@@ -1,0 +1,35 @@
+.app {
+  @apply w-full phone:max-h-[316px] phone:overflow-y-auto;
+  :global {
+    .answer-title {
+      @apply text-[#D8D8D8] text-[14px] font-light pt-[23px] pb-[11px];
+    }
+    .answer-content-quote-wrap {
+      @apply grid grid-cols-1 gap-[10px] mb-[10px];
+      .list-icon {
+        @apply w-[20px] h-[20px] rounded-[100%];
+        img {
+          @apply rounded-[100%];
+        }
+      }
+      .answer-quote-item {
+        @apply flex items-center justify-around bg-[#333436] text-[14px] font-medium rounded-[11px] pt-[7px] pb-[6px] cursor-pointer hover:bg-[#00f990];
+        transition: all 0.3s;
+        .name {
+          @apply truncate max-w-[170px] pc:ml-[-30px] phone:text-[12px];
+        }
+        .percent-value {
+          &-up {
+            @apply text-[#00a052];
+          }
+          &-down {
+            @apply text-[#f1544e];
+          }
+        }
+        &-disabled {
+          @apply cursor-not-allowed bg-[#99a3aa] hover:bg-[#99a3aa];
+        }
+      }
+    }
+  }
+}

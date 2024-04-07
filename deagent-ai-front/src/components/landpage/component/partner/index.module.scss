@@ -1,0 +1,25 @@
+.app {
+  @apply pc:w-[61%] flex flex-col phone:w-[80%] text-center m-auto pc:pt-[161px] phone:pt-[80px] phone:pb-[22px];
+
+  :global {
+    // .title {
+    //   @apply text-[36px] font-semibold font-unageo mt-[161px] mb-[47px];
+    //   color: var(--deagent-ai-title-bg-color);
+    // }
+    .ai-text {
+      color: var(--deagent-ai-active-bg-color);
+    }
+    .text {
+      @apply phone:absolute phone:bottom-[22px] phone:left-[30px];
+    }
+    .partner-ai-image {
+      @apply grid pc:grid-cols-4 pc:pt-[47px] phone:grid-cols-2 pc:gap-x-[42px] pc:gap-y-[33px] phone:gap-x-[14px] phone:pt-[20px];
+      > div {
+        @apply flex justify-center items-center relative overflow-hidden pc:h-[60px] phone:h-[66px] text-[24px];
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: var(--deagent-ai-title-bg-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.app {
+  @apply my-[10px];
+  ul {
+    @apply mt-[15px];
+    li {
+      @apply py-[4px] px-[12px] border border-transparent rounded-[4px] text-[#a4acb4] my-[5px] cursor-pointer bg-[#2d2f30] hover:border hover:border-[#a4acb4];
+    }
+    :global {
+      .item-active {
+        @apply text-[#aa9b9b] hover:text-[#a4acb4];
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.app {
+  @apply flex items-center justify-center flex-col opacity-0 z-[-1];
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  :global {
+    .app-content {
+      @apply relative flex items-center justify-center flex-col;
+      width: calc(478px / 2);
+      height: calc(552px / 2);
+    }
+    .app-title {
+      @apply absolute;
+    }
+    .loop-image {
+      @apply absolute;
+    }
+  }
+}

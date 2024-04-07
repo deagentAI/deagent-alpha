@@ -1,0 +1,14 @@
+.app {
+  @apply flex flex-col text-center pc:pt-[200px] phone:pt-[80px];
+  :global {
+    .title {
+      @apply phone:text-[20px] phone:flex phone:flex-col;
+    }
+    .sub-title {
+      @apply phone:w-[80%] phone:m-auto phone:mb-[26px] phone:mt-[7px];
+    }
+    .try-demo {
+      @apply m-auto text-[24px] text-center text-[#fff] bg-[#00fb93] w-[443px] phone:w-[200px] phone:text-[18px] phone:h-[56px] h-[80px] rounded-[10px] whitespace-nowrap;
+    }
+  }
+}
